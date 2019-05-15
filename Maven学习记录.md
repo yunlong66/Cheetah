@@ -5,14 +5,14 @@ Maven的优点：统一维护jar包
 正常情况下如果有3个Java项目，就会各自维护一套jar包，但是其中有些jar包是相同的。
 而maven风格的项目，首先把所有的jar包都放在"仓库“ 里，然后哪个项目需要用到这个jar包，只需要给出jar包的名称和版本号就行了，这样jar包就实现了共享。
 
-###Maven的项目结构：
+Maven的项目结构：
 1. 有一个pom.xml 用于维护当前项目都用了哪些jar包
 2. 所有的java代码都放在 src/main/java 下面
 3. 所有的测试代码都放在src/test/java 下面
 
-###Maven常用命令：
+Maven常用命令：
 1. 创建Maven的普通java项目：
-牋mvn archetype:generate -DgroupId=com.testmaven -DartifactId=Cheetah -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.testmaven -DartifactId=Cheetah -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
   archetype:generate 表示创建项目
   -DgroupId 项目包名: com.testmaven
   -DartifactId 项目名称: Cheetah
