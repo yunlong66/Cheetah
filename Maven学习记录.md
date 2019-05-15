@@ -31,6 +31,7 @@ mvn archetype:create
 8. 在本地Repository中安装jar：mvn install
 9. 清除产生的项目：mvn clean牋
 
+pom.xml文件组成及用途：
 POM是 Maven 工程的基本工作单元，是一个XML文件，包含了项目的基本信息，用于描述项目如何构建，声明项目依赖等。
 POM 中可以指定以下配置：
 项目依赖
@@ -59,27 +60,36 @@ POM 中可以指定以下配置：
 <repositories> --发现依赖和扩展的远程仓库列表。
 <distributionManagement> --部署项目产生的构件到远程仓库需要的信息
 
+仓库概念：
 仓库就是用于存放项目需要的jar包的。
 maven采用一个仓库，多个项目的方式，让多个项目共享一个仓库里的相同jar包。
+Maven 仓库有三种类型：
+本地（local）Maven 所需要的任何构件都是直接从本地仓库获取的。如果本地仓库没有，它会首先尝试从远程仓库下载构件至本地仓库，然后再使用本地仓库的构件。
+中央（central）Maven 中央仓库是由 Maven 社区提供的仓库，其中包含了大量常用的库。
+远程（remote）开发人员自己定制的仓库，包含了所需要的代码库或者其他工程中用到的 jar 文件。
+
 在MAC环境下，通过/usr/local/maven/conf/settings.xml文件可以看到仓库的默认位置是
 Default: ${user.home}/.m2/repository 
 我把修改仓库地址修改成了/Users/yanyunlong/maven/repository
 maven会默认从maven官方提供的服务器下载jar包,可以在上面说的settings.xml文件里修改下载路径，换成国内的下载速度会更快。
 
-父子聚合项目：通过 maven 可以创建父子-聚合项目。 所谓的父子项目，即有一个父项目，有多个子项目。
+父子聚合项目:
+通过 maven 可以创建父子-聚合项目。 所谓的父子项目，即有一个父项目，有多个子项目。
 这些子项目，在业务逻辑上，都归纳在这个父项目下，并且一般来说，都会有重复的jar包共享。
 所以常用的做法会把重复的 jar 包都放在父项目下进行依赖，那么子项目就无需再去依赖这些重复的 jar 包了。
 子项目的 pom.xml ，多了一个parent, 这个就是对父项目的依赖。
-    <parent>
+
+  <parent>
          <artifactId>cheetah</artifactId>
         <groupId>com.maventest</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
 父项目的 pom.xml ,多了这么一个模块, 就表示对子项目的关联。
+
    <modules>
     <module>childMavenTest</module>
   </modules>
-
 
 Maven 依赖搜索顺序
 当我们执行 Maven 构建命令时，Maven 开始按照以下顺序查找依赖的库：
