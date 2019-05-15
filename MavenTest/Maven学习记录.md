@@ -34,7 +34,7 @@
 6. 创建项目文档site：mvn site
 7. 打包(不)：mvn package
 8. 在本地Repository中安装jar：mvn install
-9. 清除产生的项目：mvn clean牋
+9. 清除产生的项目：mvn clean
 
 ####pom.xml文件组成及用途：
 POM是 Maven 工程的基本工作单元，是一个XML文件，包含了项目的基本信息，用于描述项目如何构建，声明项目依赖等。
