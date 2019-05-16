@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fa0c622-db3f-4af3-a53f-714863098907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jedis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redis/TestRedis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redis/TestRedisMore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redis/TestRedisMore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/redis/TestRedisMore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java8Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java8Test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -31,11 +27,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redis/TestRedisMore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="1673">
+              <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1420#1435#0" expanded="true" />
+                <element signature="e#1345#1360#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558018011208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558019135005" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -153,12 +149,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558017494708</updated>
-      <workItem from="1558017499613" duration="457000" />
+      <workItem from="1558017499613" duration="971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457000" />
+    <option name="totallyTimeSpent" value="971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -208,11 +204,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redis/TestRedisMore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="1673">
+          <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1420#1435#0" expanded="true" />
+            <element signature="e#1345#1360#0" expanded="true" />
           </folding>
         </state>
       </provider>

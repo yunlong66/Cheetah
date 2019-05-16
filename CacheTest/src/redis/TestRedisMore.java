@@ -20,22 +20,21 @@ public class TestRedisMore {
 
     }
 
-    /**
-     * Redis存储初级的字符串
-     * CRUD
-     */
+
+//     Redis存储初级的字符串
+//     CRUD
     @Test
     public void testBasicString(){
-        //-----添加数据----------
-        jedis.set("name","meepo");//向key-->name中放入了value-->meepo
+        //添加数据
+        jedis.set("name","meepo");//向key->name中放入了value->meepo
         System.out.println(jedis.get("name"));//执行结果：meepo
 
-        //-----修改数据-----------
-        //1、在原来基础上修改
+        //修改数据
+        //在原来基础上修改
         jedis.append("name","dota");   //很直观，类似map 将dota append到已经有的value之后
         System.out.println(jedis.get("name"));//执行结果:meepodota
 
-        //2、直接覆盖原来的数据
+        //直接覆盖原来的数据
         jedis.set("name","poofu");
         System.out.println(jedis.get("name"));//执行结果：poofu
 
@@ -43,26 +42,26 @@ public class TestRedisMore {
         jedis.del("name");
         System.out.println(jedis.get("name"));//执行结果：null
 
-        /**
-         * mset相当于
-         * jedis.set("name","meepo");
-         * jedis.set("dota","poofu");
-         */
+
+//          mset相当于
+//          jedis.set("name","meepo");
+//          jedis.set("dota","poofu");
+
         jedis.mset("name","meepo","dota","poofu");
         System.out.println(jedis.mget("name","dota"));
 
     }
 
-    /**
-     * jedis操作Map
-     */
+
+//      jedis操作Map
+
     @Test
     public void testMap(){
         Map<String,String> user=new HashMap<String,String>();
         user.put("name","meepo");
         user.put("pwd","password");
         jedis.hmset("user",user);
-        //取出user中的name，执行结果:[meepo]-->注意结果是一个泛型的List
+        //取出user中的name,结果是一个泛型的List
         //第一个参数是存入redis中map对象的key，后面跟的是放入map中的对象的key，后面的key可以跟多个，是可变参数
         List<String> rsmap = jedis.hmget("user", "name");
         System.out.println(rsmap);
@@ -83,9 +82,7 @@ public class TestRedisMore {
 
     }
 
-    /**
-     * jedis操作List
-     */
+//    jedis操作List
     @Test
     public void testList(){
         //开始前，先移除所有的内容
@@ -101,9 +98,7 @@ public class TestRedisMore {
         System.out.println(jedis.lrange("java framework",0,-1));
     }
 
-    /**
-     * jedis操作Set
-     */
+//     jedis操作Set
     @Test
     public void testSet(){
         //添加
@@ -137,7 +132,7 @@ public class TestRedisMore {
         System.out.println(jedis.get("time")); //因为将timekey 重命名为time 所以可以取得值 min
 
         //jedis 排序
-        //注意，此处的rpush和lpush是List的操作。是一个双向链表（但从表现来看的）
+        //此处的rpush和lpush是List的操作。
         jedis.del("a");//先清除数据，再加入数据进行测试
         jedis.rpush("a", "1");
         jedis.lpush("a","6");
