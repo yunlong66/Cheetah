@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbfaf7eb-b799-4e94-8a4b-cc2bd9859308" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lambda/Anonymous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/Checker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/Lambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/Normal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/TestLambda1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/TestLambda2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/TestLambda3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lambda/TestLambda4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stream/StreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Time/TimeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/src/Stream/StreamTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1273">
-              <caret line="67" column="45" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="45" />
+              <caret line="67" column="45" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3847#3855#0" expanded="true" />
@@ -43,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Time/TimeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="232">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,12 +113,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Stream" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java8Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java8Test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Time" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -140,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558015402107" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558015544393" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -246,16 +229,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558003692688</updated>
-      <workItem from="1558003696447" duration="7632000" />
+      <workItem from="1558003696447" duration="7969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7632000" />
+    <option name="totallyTimeSpent" value="7969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -438,7 +420,7 @@
     <entry file="file://$PROJECT_DIR$/src/Stream/StreamTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1273">
-          <caret line="67" column="45" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="45" />
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3847#3855#0" expanded="true" />
@@ -451,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Time/TimeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        <state relative-caret-position="232">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
