@@ -99,5 +99,16 @@
 			</choose>
 		</where>
 	</select>
+
+	<update id="updateProduct2" parameterType="Product" >
+		update product_
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="name != null">name=#{name},</if>
+			<if test="price != null">price=#{price}</if>
+
+		</trim>
+
+		where id=#{id}
+	</update>
 </mapper>
 
