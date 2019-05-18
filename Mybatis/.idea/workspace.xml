@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1e54d2-3f6c-4aa1-ae49-fd19e2c149ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CacheTest/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CacheTest/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CacheTest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CacheTest/src/main/java/guava/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CacheTest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CacheTest/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CacheTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CacheTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CacheTest/CacheTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CacheTest/CacheTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CacheTest/out/production/CacheTest/redsi/TestRedis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CacheTest/src/redis/TestRedis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CacheTest/src/redis/TestRedisMore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java8Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java8Test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,25 +14,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="342">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
-                <element signature="e#111#112#0" expanded="true" />
-                <element signature="e#127#128#0" expanded="true" />
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
                 <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            <state relative-caret-position="190">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -60,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/pojo/Product.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
               <folding>
                 <element signature="e#147#148#0" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
@@ -84,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/TestMybatis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="285">
               <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -137,6 +118,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mybatis" type="58d84e3e:PackageViewProjectNode" />
+              <item name="mybatis" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="mybatis" type="58d84e3e:PackageViewProjectNode" />
+              <item name="mybatis" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -203,28 +200,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="mybatis" type="58d84e3e:PackageViewProjectNode" />
-              <item name="mybatis" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="58d84e3e:PackageViewProjectNode" />
-              <item name="mybatis" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558085797479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558190771463" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -276,11 +257,13 @@
       <option name="presentableId" value="Default" />
       <updated>1558075512964</updated>
       <workItem from="1558075514407" duration="3542000" />
+      <workItem from="1558189085000" duration="129000" />
+      <workItem from="1558190524382" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3542000" />
+    <option name="totallyTimeSpent" value="3919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -291,7 +274,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18739903" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19224556" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -321,33 +304,16 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="342">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <element signature="e#111#112#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -355,7 +321,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/pojo/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
           <folding>
             <element signature="e#147#148#0" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
@@ -377,7 +343,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/TestMybatis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="285">
           <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -385,10 +351,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        <state relative-caret-position="190">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
