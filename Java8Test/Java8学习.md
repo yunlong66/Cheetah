@@ -187,3 +187,93 @@ List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);   IntSummaryStatisti
 - ZonedDateTime：最完整的日期时间，包含时区和相对UTC或格林威治的时差。
 
 具体示例在代码中
+
+---
+
+Lambda 表达式的示例
+
+- 用lambda表达式实现Runnable
+
+首先想到的就是使用lambda表达式替换匿名类，而实现Runnable接口是匿名类的最好示例。Java 8之前的runnable实现方法，需要4行代码，而使用lambda表达式只需要一行代码。用() -> {}代码块替代了整个匿名类
+
+```java
+// Java 8之前：
+new Thread(new Runnable() {
+    @Override
+    public void run() {
+    System.out.println("Before Java8, too much code for too little to do");
+    }
+}).start();
+
+//Java 8方式：
+new Thread( () -> System.out.println("In Java8, Lambda expression rocks !!") ).start();
+```
+
+如果不需要对方法的参数进行修改、重写，只是在控制台打印点东西的话，可以这样写：
+
+```
+() -> System.out.println("Hello Lambda Expressions");
+```
+
+如果方法接收两个参数，那么可以写成如下这样：
+
+```
+(int even, int odd) -> even + odd
+```
+
+- Lambda表达式进行事件处理
+
+以Swing为例
+
+```java
+// Java 8之前：
+JButton show =  new JButton("Show");
+show.addActionListener(new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+    System.out.println("Event handling without lambda expression is boring");
+    }
+});
+
+// Java 8方式：
+show.addActionListener((e) -> {
+    System.out.println("Light, Camera, Action !! Lambda expressions Rocks");
+});
+```
+
+- 对列表进行迭代
+
+```java
+// Java 8之前：
+List features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
+for (String feature : features) {
+    System.out.println(feature);
+}
+
+// Java 8之后：
+List features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
+features.forEach(n -> System.out.println(n));
+ 
+// 使用Java 8的方法引用更方便，方法引用由::双冒号操作符标示，
+// 看起来像C++的作用域解析运算符
+features.forEach(System.out::println);
+```
+
+- 通过过滤创建一个String列表
+
+流提供了一个 filter() 方法，接受一个 Predicate 对象，即可以传入一个lambda表达式作为过滤逻辑。
+
+```java
+// 创建一个字符串列表，每个字符串长度大于2
+List<String> filtered = strList.stream().filter(x -> x.length()> 2).collect(Collectors.toList());
+System.out.printf("Original List : %s, filtered list : %s %n", strList, filtered);
+```
+
+- 复制不同的值，创建一个子列表
+
+```java
+// 用所有不同的数字创建一个正方形列表
+List<Integer> numbers = Arrays.asList(9, 10, 3, 4, 7, 3, 4);
+List<Integer> distinct = numbers.stream().map( i -> i*i).distinct().collect(Collectors.toList());
+System.out.printf("Original List : %s,  Square Without duplicates : %s %n", numbers, distinct);
+```
