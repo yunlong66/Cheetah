@@ -1,4 +1,4 @@
-package com.cheetah.springtest.pojo;
+package com.cheetah.springboot.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
