@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d1e54d2-3f6c-4aa1-ae49-fd19e2c149ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MavenTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/TestMybatis/pojo/Category.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -258,12 +257,12 @@
       <workItem from="1558075514407" duration="3542000" />
       <workItem from="1558189085000" duration="129000" />
       <workItem from="1558190524382" duration="248000" />
-      <workItem from="1558191359443" duration="55000" />
+      <workItem from="1558191359443" duration="126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3974000" />
+    <option name="totallyTimeSpent" value="4045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
