@@ -19,14 +19,14 @@ public class MybatisTest {
 	private CategoryMapper categoryMapper;
 
 	@Test
-	public void testAdd() {
+	public void testAdd() { //调用insert
 		Category category = new Category();
 		category.setName("new Category");
 		categoryMapper.add(category);
 	}
 
 	@Test
-	public void testList() {
+	public void testList() { //调用list
 		System.out.println(categoryMapper);
 		List<Category> cs=categoryMapper.list();
 		for (Category c : cs) {
