@@ -4,6 +4,8 @@ import tmall.bean.DBUtil;
 import tmall.bean.User;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
 
@@ -91,10 +93,100 @@ public class UserDAO {
 
                 bean.setName(name);
                 bean.setPassword(password);
+                bean.setId(id);
             }
         }catch (SQLException e){
             e.printStackTrace();
         }
+
+        return bean;
+    }
+
+    public List<User> list() {
+        return list(0, Short.MAX_VALUE);
+    }
+
+    //用户列表分页查询
+    public List<User> list(int start, int count){
+        List<User> beans = new ArrayList<User>();
+        String sql = "select * from User order by id desc limit ? ,?";
+
+        try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql);){
+
+            ps.setInt(1,start);
+            ps.setInt(2,count);
+
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                User bean = new User();
+                String name = rs.getString("name");
+                String password = rs.getString("password");
+                int id = rs.getInt(1);
+                bean.setName(name);
+                bean.setPassword(password);
+                beans.add(bean);
+                bean.setId(id);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return beans;
+    }
+
+    //根据用户名查找
+    public User get(String name) {
+        User bean = null;
+
+        String sql = "select * from User where name = ?";
+        try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, name);
+            ResultSet rs =ps.executeQuery();
+
+            if (rs.next()) {
+                bean = new User();
+                int id = rs.getInt("id");
+                bean.setName(name);
+                String password = rs.getString("password");
+                bean.setPassword(password);
+                bean.setId(id);
+            }
+
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        }
+        return bean;
+    }
+
+    //根据用户名和密码匹配
+    public User get(String name, String password) {
+        User bean = null;
+
+        String sql = "select * from User where name = ? and password=?";
+        try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, name);
+            ps.setString(2, password);
+            ResultSet rs =ps.executeQuery();
+
+            if (rs.next()) {
+                bean = new User();
+                int id = rs.getInt("id");
+                bean.setName(name);
+                bean.setPassword(password);
+                bean.setId(id);
+            }
+
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        }
+        return bean;
+    }
+
+    //用户名是否存在
+    public boolean isExist(String name) {
+        User user = get(name);
+        return user!=null;
 
     }
 }
