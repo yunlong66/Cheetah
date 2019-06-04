@@ -1,10 +1,10 @@
 package tmall.util;
 
 public class Page {
-	int start;
-	int count;
-	int total;
-	String param;
+	int start;//开始位置
+	int count;//每页显示数量
+	int total;//总共多少条数据
+	String param;//参数
 	public int getStart() {
 		return start;
 	}
@@ -22,19 +22,23 @@ public class Page {
 		this.start = start;
 		this.count = count;
 	}
-	
+
+	//是否有上一页
 	public boolean isHasPreviouse(){
 		if(start==0)
 			return false;
 		return true;
 		
 	}
+
+	//是否有下一页
 	public boolean isHasNext(){
 		if(start==getLast())
 			return false;
 		return true;
 	}
-	
+
+	//总页数
 	public int getTotalPage(){
 		int totalPage;
         // 假设总数是50，是能够被5整除的，那么就有10页
@@ -49,7 +53,8 @@ public class Page {
         return totalPage;
 		
 	}
-	
+
+	//最后一页的数值
 	public int getLast(){
 		int last;
         // 假设总数是50，是能够被5整除的，那么最后一页的开始就是45

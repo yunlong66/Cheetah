@@ -22,16 +22,20 @@ public class CategoryServlet extends BaseBackServlet {
 	
 	public String add(HttpServletRequest request, HttpServletResponse response, Page page) {
 		Map<String,String> params = new HashMap<>();
+		//获取上传文件的输入流，非文件参数保存在params里
 		InputStream is = super.parseUpload(request, params);
-		
+
+		//获取分类名称
 		String name= params.get("name");
 		Category c = new Category();
 		c.setName(name);
 		categoryDAO.add(c);
-		
+
+
+		//获取到存放分类图片的目录
 		File  imageFolder= new File(request.getSession().getServletContext().getRealPath("img/category"));
 		File file = new File(imageFolder,c.getId()+".jpg");
-		
+		//把浏览器提交的文件，复制到目标文件
 		try {
 			if(null!=is && 0!=is.available()){
 			    try(FileOutputStream fos = new FileOutputStream(file)){
@@ -52,7 +56,7 @@ public class CategoryServlet extends BaseBackServlet {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}	
+		}
 		return "@admin_category_list";
 	}
 

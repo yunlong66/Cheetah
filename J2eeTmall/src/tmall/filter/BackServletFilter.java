@@ -25,12 +25,17 @@ public class BackServletFilter implements Filter {
 			throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
-		
+
+		//获取到"/tmall"
 		String contextPath=request.getServletContext().getContextPath();
 		String uri = request.getRequestURI();
+		//把URI '/tmall/admin_xxx_xxx'中的'tmall'去掉
 		uri =StringUtils.remove(uri, contextPath);
-		if(uri.startsWith("/admin_")){		
+
+		if(uri.startsWith("/admin_")){
+			//获取到'Category'，后面拼接上'Servlet'
 			String servletPath = StringUtils.substringBetween(uri,"_", "_") + "Servlet";
+			//获取到'list'，方法名
 			String method = StringUtils.substringAfterLast(uri,"_" );
 			request.setAttribute("method", method);
 			req.getRequestDispatcher("/" + servletPath).forward(request, response);
