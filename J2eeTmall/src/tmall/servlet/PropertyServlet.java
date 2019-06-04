@@ -40,7 +40,8 @@ public class PropertyServlet extends BaseBackServlet{
         request.setAttribute("c", c);
         request.setAttribute("page", page);
 
-        return "admin_property_list?cid=" + cid;
+//        return "admin_property_list?cid=" + cid;
+        return "admin/listProperty.jsp";
     }
 
     public String edit(HttpServletRequest request, HttpServletResponse response, Page page){
