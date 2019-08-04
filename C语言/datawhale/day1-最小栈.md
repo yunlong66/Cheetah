@@ -74,5 +74,5 @@ void minStackFree(MinStack* obj) {
   */
 ```
 
-![day1 最小栈](./day1 最小栈.png)
+![day1 最小栈](./day1-最小栈.png)
 
